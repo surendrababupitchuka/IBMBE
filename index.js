@@ -6,16 +6,6 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 app.use('/api/vmCrud',require('./routes/vmCrud'));
 
-/**
-REstuarants
-menus
-submenus
-items
-orders
-users
-orderhistory
-*/
-
 app.listen(process.env.PORT || 3001,()=>{
     console.log("Server Started at port 3001 ");
 });
